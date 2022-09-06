@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  iRest
+
+  Created by Sword on 2022/9/6.
+  Copyright © 2022 DengFeng.Su. All rights reserved.
+*/
+
+"rest a while" = "休息一下";
+"unmake rest" = "开始工作";
+"rest ten minutes" = "休息十分钟";
+"one hour break" = "休息一小时";
+"show time on status bar" = "在状态栏上显示时间";
+"quit" = "退出";

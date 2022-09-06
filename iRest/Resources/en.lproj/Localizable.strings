@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  iRest
+
+  Created by Sword on 2022/9/6.
+  Copyright © 2022 DengFeng.Su. All rights reserved.
+*/
+
+"rest a while" = "Rest a while";
+"unmake rest" = "Unmake rest";
+"rest ten minutes" = "Rest ten minutes";
+"one hour break" = "One hour break";
+"show time on status bar" = "Show time on status bar";
+"quit" = "Quit";
