@@ -13,6 +13,11 @@
 		500BB0AC28C6F31B00D55F2C /* SDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BB0AB28C6F31B00D55F2C /* SDTimer.swift */; };
 		500BB0AE28C6F8C000D55F2C /* SDConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BB0AD28C6F8C000D55F2C /* SDConfigure.swift */; };
 		500BB0B028C71B8300D55F2C /* SDTimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500BB0AF28C71B8300D55F2C /* SDTimeConverter.swift */; };
+		5027C6EF28C8D8B700C2EE43 /* SDNoviceGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5027C6F128C8D8B700C2EE43 /* SDNoviceGuideViewController.xib */; };
+		506C5D8328C9D2BB001C1D50 /* View+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C5D8228C9D2BB001C1D50 /* View+Color.swift */; };
+		50A121D228C9DF32003BE161 /* SDNoviceGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A121D128C9DF32003BE161 /* SDNoviceGuideViewController.swift */; };
+		50A121D528C9E161003BE161 /* SDNoviceGuideView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A121D328C9E161003BE161 /* SDNoviceGuideView2.xib */; };
+		50A121D928C9E1C0003BE161 /* SDNoviceGuideView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50A121D728C9E1C0003BE161 /* SDNoviceGuideView1.xib */; };
 		50BC035C26FC870C0028A3D9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC035B26FC870C0028A3D9 /* main.swift */; };
 		50BC035E26FC87520028A3D9 /* SDStatusBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC035D26FC87510028A3D9 /* SDStatusBarManager.swift */; };
 		92575F25229FC5C400A5862C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92575F24229FC5C400A5862C /* AppDelegate.swift */; };
@@ -46,6 +51,14 @@
 		500BB0AB28C6F31B00D55F2C /* SDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDTimer.swift; sourceTree = "<group>"; };
 		500BB0AD28C6F8C000D55F2C /* SDConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDConfigure.swift; sourceTree = "<group>"; };
 		500BB0AF28C71B8300D55F2C /* SDTimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDTimeConverter.swift; sourceTree = "<group>"; };
+		5027C6F028C8D8B700C2EE43 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SDNoviceGuideViewController.xib"; sourceTree = "<group>"; };
+		5027C6F228C8D8BA00C2EE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SDNoviceGuideViewController.xib; sourceTree = "<group>"; };
+		506C5D8228C9D2BB001C1D50 /* View+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Color.swift"; sourceTree = "<group>"; };
+		50A121D128C9DF32003BE161 /* SDNoviceGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDNoviceGuideViewController.swift; sourceTree = "<group>"; };
+		50A121D428C9E161003BE161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SDNoviceGuideView2.xib; sourceTree = "<group>"; };
+		50A121D628C9E196003BE161 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SDNoviceGuideView2.xib"; sourceTree = "<group>"; };
+		50A121D828C9E1C0003BE161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SDNoviceGuideView1.xib; sourceTree = "<group>"; };
+		50A121DA28C9E1CA003BE161 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/SDNoviceGuideView1.xib"; sourceTree = "<group>"; };
 		50BC035B26FC870C0028A3D9 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		50BC035D26FC87510028A3D9 /* SDStatusBarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDStatusBarManager.swift; sourceTree = "<group>"; };
 		92575F21229FC5C400A5862C /* iRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +116,7 @@
 				50BC035D26FC87510028A3D9 /* SDStatusBarManager.swift */,
 				500BB09E28C6E87100D55F2C /* SDBumSteadyManager.swift */,
 				500BB0AD28C6F8C000D55F2C /* SDConfigure.swift */,
+				506C5D8228C9D2BB001C1D50 /* View+Color.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -115,6 +129,17 @@
 				500BB0AF28C71B8300D55F2C /* SDTimeConverter.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		50A9892A28C8401300B42358 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				50A121D128C9DF32003BE161 /* SDNoviceGuideViewController.swift */,
+				5027C6F128C8D8B700C2EE43 /* SDNoviceGuideViewController.xib */,
+				50A121D728C9E1C0003BE161 /* SDNoviceGuideView1.xib */,
+				50A121D328C9E161003BE161 /* SDNoviceGuideView2.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		92575F18229FC5C400A5862C = {
@@ -142,6 +167,7 @@
 			children = (
 				50BC035B26FC870C0028A3D9 /* main.swift */,
 				92575F24229FC5C400A5862C /* AppDelegate.swift */,
+				50A9892A28C8401300B42358 /* View */,
 				500BB0A928C6F29500D55F2C /* Core */,
 				500BB0AA28C6F30000D55F2C /* Tools */,
 				500BB0A228C6EF2B00D55F2C /* Resources */,
@@ -272,8 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5027C6EF28C8D8B700C2EE43 /* SDNoviceGuideViewController.xib in Resources */,
 				92575F29229FC5C500A5862C /* Assets.xcassets in Resources */,
 				500BB0A328C6EF4C00D55F2C /* Localizable.strings in Resources */,
+				50A121D528C9E161003BE161 /* SDNoviceGuideView2.xib in Resources */,
+				50A121D928C9E1C0003BE161 /* SDNoviceGuideView1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +333,9 @@
 				500BB0A828C6F13A00D55F2C /* SDLocalized.swift in Sources */,
 				50BC035C26FC870C0028A3D9 /* main.swift in Sources */,
 				500BB0AC28C6F31B00D55F2C /* SDTimer.swift in Sources */,
+				50A121D228C9DF32003BE161 /* SDNoviceGuideViewController.swift in Sources */,
 				500BB0B028C71B8300D55F2C /* SDTimeConverter.swift in Sources */,
+				506C5D8328C9D2BB001C1D50 /* View+Color.swift in Sources */,
 				50BC035E26FC87520028A3D9 /* SDStatusBarManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +379,33 @@
 				500BB0A628C6EF5C00D55F2C /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5027C6F128C8D8B700C2EE43 /* SDNoviceGuideViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5027C6F028C8D8B700C2EE43 /* zh-Hans */,
+				5027C6F228C8D8BA00C2EE43 /* Base */,
+			);
+			name = SDNoviceGuideViewController.xib;
+			sourceTree = "<group>";
+		};
+		50A121D328C9E161003BE161 /* SDNoviceGuideView2.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A121D428C9E161003BE161 /* Base */,
+				50A121D628C9E196003BE161 /* zh-Hans */,
+			);
+			name = SDNoviceGuideView2.xib;
+			sourceTree = "<group>";
+		};
+		50A121D728C9E1C0003BE161 /* SDNoviceGuideView1.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A121D828C9E1C0003BE161 /* Base */,
+				50A121DA28C9E1CA003BE161 /* zh-Hans */,
+			);
+			name = SDNoviceGuideView1.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,7 +546,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SD.DontSleep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdf.iRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -500,7 +558,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = iRest/Resources/iRest.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = PZYD6XBB8W;
@@ -510,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SD.DontSleep;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sdf.iRest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

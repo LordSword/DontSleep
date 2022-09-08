@@ -17,6 +17,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         SDConfigure.configDefaultValue()
         SDStatusBarManager.shared.configure()
+        
+        if SDConfigure.firstLaunch {
+            SDNoviceGuideViewController.show()
+            SDConfigure.firstLaunch = false
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

@@ -12,10 +12,11 @@ class SDConfigure {
     
     struct Key {
         static let showTimeOnStatusBar = "showTimeOnStatusBar"
+        static let firstLaunch = "firstLaunch"
     }
     
     static func configDefaultValue() {
-        UserDefaults.standard.register(defaults: [Key.showTimeOnStatusBar: true])
+        UserDefaults.standard.register(defaults: [Key.showTimeOnStatusBar: true, Key.firstLaunch: true])
     }
     
     static var showTimeOnStatusBar: Bool {
@@ -25,6 +26,16 @@ class SDConfigure {
         }
         get {
             return UserDefaults.standard.bool(forKey: Key.showTimeOnStatusBar)
+        }
+    }
+    
+    static var firstLaunch: Bool {
+        set {
+            UserDefaults.standard.set(newValue, forKey: Key.firstLaunch)
+            UserDefaults.standard.synchronize()
+        }
+        get {
+            return UserDefaults.standard.bool(forKey: Key.firstLaunch)
         }
     }
 }

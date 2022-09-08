@@ -22,7 +22,7 @@ class SDStatusBarManager: NSObject {
         if #available(macOS 10.16, *) {
             return 0
         } else {
-            return 32
+            return 20
         }
     }()
     var remaining: Int = 0 {
@@ -41,13 +41,18 @@ class SDStatusBarManager: NSObject {
     private lazy var statusItem: NSStatusItem =  {
         
         var res = NSStatusBar.system.statusItem(withLength: minLength + extLength)
-        if let button = res.button {
+        if let button = res.button, let cell = button.cell as? NSButtonCell {
             button.imagePosition = .imageLeft
-            button.isBordered = true
             button.bezelStyle = .texturedRounded
+            button.isBordered = true
             button.imageHugsTitle = true
             button.wantsLayer = true
             button.layer?.backgroundColor = NSColor.clear.cgColor
+//            button.isTransparent = true
+            button.contentTintColor = NSColor.white
+            
+            cell.backgroundStyle = .normal
+            cell.backgroundColor = NSColor.clear
         }
         res.menu = menu
         return res
@@ -68,6 +73,7 @@ class SDStatusBarManager: NSObject {
         res.addItem(item2)
         res.addItem(.separator())
         res.addItem(showTimeSwitchItem)
+        res.addItem(withTitle: SDLocalized.string("novice guide"), action: #selector(showNoviceGuide), keyEquivalent: "")
         res.addItem(.separator())
         res.addItem(withTitle: SDLocalized.string("quit"), action: #selector(quit), keyEquivalent: "")
         
@@ -125,6 +131,13 @@ extension SDStatusBarManager {
         SDConfigure.showTimeOnStatusBar = !SDConfigure.showTimeOnStatusBar
         showTimeSwitchItem.state = SDConfigure.showTimeOnStatusBar ? .on:.off
         updateStatusItemTimeLabel()
+    }
+    
+    @objc private func showNoviceGuide() {
+        if SDNoviceGuideViewController.isShow {
+            return
+        }
+        SDNoviceGuideViewController.show()
     }
     
     @objc private func quit() {
