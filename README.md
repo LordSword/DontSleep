@@ -10,3 +10,5 @@
 关闭状态：  
 <img src="Resource/moon.png" title="" alt="关闭状态" width="65">  
 `鼠标右键`点击状态栏icon弹出退出按钮，点击退出按钮结束应用
+
+有任何问题请发送邮件至sword_lord@foxmail.com
